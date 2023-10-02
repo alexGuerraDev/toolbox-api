@@ -1,0 +1,29 @@
+{
+  "name": "toolbox-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha  --exit --recursive src/__tests__",
+    "start": "node src/index.js"
+  },
+  "author": "ingguerra9@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@sinonjs/referee-sinon": "^11.0.0",
+    "axios-mock-adapter": "^1.22.0",
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "jsverify": "^0.8.4",
+    "knuth-shuffle": "^1.0.8",
+    "mocha": "^10.2.0",
+    "sinon": "^16.0.0",
+    "supertest": "^6.3.3"
+  }
+}
