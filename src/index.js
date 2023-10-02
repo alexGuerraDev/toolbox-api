@@ -49,6 +49,11 @@ app.get('/files/data', async (req, res) => {
   res.status(200).json(resp);
 });
 
+app.get('/files/list', async (req, res) => {
+  const data = await ToolboxService.getSecretfiles();
+  res.status(200).json(data.files);
+});
+
 
 app.listen(PORT, () => {
   console.log(`El servidor está corriendo en http://localhost:${PORT}`);
